@@ -1,0 +1,112 @@
+.login {
+  margin: 0px;
+  padding:0px;
+
+  .container {
+    background: url('assets/imgs/background-login.jpg') no-repeat center center fixed;
+    background-size: auto 100%;
+    height: 100vh;
+    .papper {
+      max-width: 460px;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      border: solid 1px #FFF;
+      border-radius: 30px;
+      min-height: 50vh;
+      h1 {
+        @include font(35px, 500, $orange);
+        font-family: Roboto;
+        text-align: center;
+        padding: 15px 0;
+      }
+      .form-content {
+        padding: 0 30px 30px;
+       
+        input {
+          border:solid 1px $white;
+          border-radius:30px;
+          margin-bottom: 15px;
+          min-height: 30px;
+          padding: 10px;
+          color:$white;
+          margin-top:6px;
+
+        
+        }
+        input::before, input::after{
+          display:none !important;
+          content: none !important;
+        }
+        .MuiInput-underline-124:hover:not(.MuiInput-disabled-123):not(.MuiInput-focused-122):not(.MuiInput-error-125):before {
+          border-bottom: none;
+        }
+        .MuiInput-underline-124:before {
+          border-bottom: none;
+        }
+        .MuiInput-underline-124:after {
+          border-bottom: none;
+        }
+        label {
+          @include font(14px, 300, $white);
+        transform: none;
+        padding-bottom: 0px;
+        top: auto;
+        }
+        a {
+          @include font(11px, 100, $white);
+          text-align: center;
+          display: block;
+          text-decoration: none;
+          margin-top:30px;
+        }
+        button {
+          @include font(18px, 500, $orange, 'Fredoka One');
+          padding:10px;
+          border-radius:30px;
+          border: solid 1px $white;
+          text-align:center;
+          width: 100%;
+          margin-top:15px;
+        }
+        hr{
+          color:#FFF;
+        }
+        .facebook{
+          margin-top:20px;
+        }
+        .signature,
+        .facebook {
+          position: relative;
+          a {
+            @include font(14px, 300, $orange);
+            text-align: left;
+            margin: 10px 35px 0;
+            padding: 5px 0;
+          }
+          img {
+            position: absolute;
+            top:3px;
+          }
+        }
+        .signature {
+          a {
+            margin: 0;
+            @include font(14px, 300, $white);
+            span {
+              color: $white
+            }
+          }
+        }
+      }
+    }
+    .logo {
+      width: 100%;
+      padding: 50px 0;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.header{
+    background: #000000;
+    
+    .clear::after{
+        content:'';
+        display:block;
+        margin:auto;
+        clear:both;
+    }
+  
+    .container{
+
+    .logo{
+        float:left;
+    }
+    
+        ul.links{
+            
+            margin:0px;
+            padding:0px;
+            float:left;
+            margin-left:30px;
+
+            li{
+                display: inline-block;
+                margin-right: 34px;
+                margin-bottom:15px;
+
+                a{
+                    @include font(14px, 300, #dce0df);
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}

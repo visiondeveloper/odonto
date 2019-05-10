@@ -1,0 +1,26 @@
+@mixin font($size: 15px, $weight: 300, $color: #FFF, $family: 'Montserrat') {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin input($boderColor: #000) {
+  border: 1px solid $boderColor;
+  box-shadow: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+@mixin button($color: #fff, $fontSize: 12px, $fontColor: #000, $height: 35px, $width: 100%) {
+  display: block;
+  text-align: center;
+  height: $height;
+  background-color: $color;
+  color: $fontColor;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Fredoka One';
+  max-width: $width;
+  width: 100%;
+}
